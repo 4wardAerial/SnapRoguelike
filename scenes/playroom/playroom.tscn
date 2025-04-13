@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cidj7afw0u5pd"]
+
+[ext_resource type="PackedScene" uid="uid://dxvjog5t3hx" path="res://scenes/player/player.tscn" id="1_mi3go"]
+[ext_resource type="PackedScene" uid="uid://cyb48kjr5oe17" path="res://scenes/floor/floor.tscn" id="2_81n18"]
+
+[node name="playroom" type="Node3D"]
+
+[node name="player" parent="." instance=ExtResource("1_mi3go")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.22428, 0)
+
+[node name="floor" parent="." instance=ExtResource("2_81n18")]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.0438461, 0.999038, 0, -0.999038, -0.0438461, 0, 9.14608, 0)
